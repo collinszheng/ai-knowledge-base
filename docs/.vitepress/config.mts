@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { nav, rewrites, sidebar } from './sections'
+import { taskListPlugin } from './task-list.mts'
 
 const REPO = 'https://github.com/collinszheng/ai-knowledge-base'
 
@@ -19,6 +20,10 @@ export default defineConfig({
   // 公式用 MathJax 在构建时渲染成 SVG：不加客户端 JS，复制出来的还是 LaTeX 源码
   markdown: {
     math: true,
+    // markdown-it 不认 GitHub 的 `- [ ]` 任务列表语法，补一个最小插件
+    config: (md) => {
+      md.use(taskListPlugin)
+    },
   },
 
   head: [

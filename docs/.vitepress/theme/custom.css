@@ -12,9 +12,26 @@
   line-height: 1.85;
 }
 
-/* 清单里的复选框和后面文字之间留点缝 */
+/* ---- GitHub 任务列表（`- [ ]`，由 docs/.vitepress/task-list.mts 生成） ---- */
+
+/* 复选框和后面文字之间留点缝，并和正文基线的位置对齐 */
 .vp-doc input[type='checkbox'] {
   margin-right: 0.5em;
+}
+
+/* 带复选框的列表项不要项目符号，缩进也收一点（GitHub 也是这个观感） */
+.vp-doc .task-list {
+  padding-left: 0.25rem;
+  list-style: none;
+}
+
+.vp-doc .task-list-item {
+  list-style: none;
+}
+
+/* 子任务列表再往右缩进一级 */
+.vp-doc .task-list .task-list {
+  padding-left: 1.4rem;
 }
 
 /* MathJax 渲染出的块级公式如果很长，允许横向滚动，不要撑破正文栏宽 */
