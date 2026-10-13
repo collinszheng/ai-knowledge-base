@@ -6,11 +6,15 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
+**在线阅读：** <https://collinszheng.github.io/ai-knowledge-base/> —— 全文搜索、目录导航、公式渲染都配好了，手机上也能看。
+
 ---
 
 ## 目录导航
 
-**笔记正文统一放在 [`docs/`](./docs/) 下**（这样以后可以直接接静态站点生成器，不用再搬）；仓库根只留 README、LICENSE、模板和配置文件。
+**笔记正文统一放在 [`docs/`](./docs/) 下**；仓库根只留 README、LICENSE、模板和配置文件。
+
+`docs/` 同时就是静态站点的根目录：站点配置在 `docs/.vitepress/`，其中 [`sections.ts`](./docs/.vitepress/sections.ts) 会按目录结构自动生成顶部导航和侧边栏 —— **加一个分区或加一篇笔记都不用改配置**。发布流程在 [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml)，推送到 `main` 就自动构建并发到 GitHub Pages。
 
 | 目录 | 内容 | 状态 |
 | --- | --- | --- |
@@ -100,6 +104,15 @@ git clone https://github.com/collinszheng/ai-knowledge-base.git
 cd ai-knowledge-base
 ```
 
+**本地预览站点**（可选，想先看看渲染效果时）：
+
+```bash
+npm install       # 只需第一次
+npm run docs:dev  # 然后打开 http://localhost:5173/ai-knowledge-base/
+```
+
+改 Markdown 会自动热更新，不用手动刷新。提交前想确认没有死链之类的构建错误，可以跑一次 `npm run docs:build`。
+
 日常更新：
 
 ```bash
@@ -114,6 +127,7 @@ git push
 | --- | --- |
 | `docs` | 新增 / 修改笔记正文 |
 | `fix` | 修正笔记里的错误 |
+| `feat` | 站点功能、构建与发布流程 |
 | `refactor` | 重组目录或拆分长文 |
 | `chore` | 仓库配置、模板、gitignore 等 |
 

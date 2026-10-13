@@ -137,3 +137,10 @@ temp/
 *.bak
 *.orig
 *.rej
+
+# ---------- 静态站点（VitePress） ----------
+# 依赖与构建产物都不进版本库：前者能用 package-lock.json 重装，后者由 Actions 生成
+node_modules/
+.pnpm-store/
+docs/.vitepress/dist/
+docs/.vitepress/cache/

@@ -2,7 +2,7 @@
 
 > 一篇论文一个文件。命名格式：`年份-会议-简称.md`，例如 `2017-NeurIPS-AttentionIsAllYouNeed.md`
 
-新建笔记请复制 [`_templates/论文笔记模板.md`](../_templates/论文笔记模板.md)。
+新建笔记请复制 [`_templates/论文笔记模板.md`](https://github.com/collinszheng/ai-knowledge-base/blob/main/_templates/论文笔记模板.md)。
 
 ## 按主题归档
 
