@@ -44,9 +44,10 @@
 # 语言统计：笔记类仓库，别让 GitHub 把它识别成「Python 项目」
 *.md    linguist-documentation
 *.ipynb linguist-documentation
-01-基础/**          linguist-documentation
-02-大模型/**        linguist-documentation
-03-应用/**          linguist-documentation
-04-论文笔记/**      linguist-documentation
-05-工具与环境/**    linguist-documentation
-assets/**           linguist-documentation
+docs/01-基础/**        linguist-documentation
+docs/02-大模型/**      linguist-documentation
+docs/03-应用/**        linguist-documentation
+docs/04-论文笔记/**    linguist-documentation
+docs/05-工具与环境/**  linguist-documentation
+docs/06-AI辅助工程/**  linguist-documentation
+docs/assets/**         linguist-documentation
