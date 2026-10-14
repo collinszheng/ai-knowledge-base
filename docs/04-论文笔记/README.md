@@ -4,6 +4,8 @@
 
 新建笔记请复制 [`_templates/论文笔记模板.md`](https://github.com/collinszheng/ai-knowledge-base/blob/main/_templates/论文笔记模板.md)。
 
+- [学习清单](./学习清单.md) —— 从读论文的方法到四个脉络经典论文的 7 个模块，逐条可勾选
+
 ## 按主题归档
 
 ### 架构
