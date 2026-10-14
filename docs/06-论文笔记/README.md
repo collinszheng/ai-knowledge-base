@@ -1,4 +1,4 @@
-# 04 · 论文笔记
+# 06 · 论文笔记
 
 > 一篇论文一个文件。命名格式：`年份-会议-简称.md`，例如 `2017-NeurIPS-AttentionIsAllYouNeed.md`
 

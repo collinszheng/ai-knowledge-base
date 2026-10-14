@@ -25,7 +25,7 @@
 
 ## 一、写一篇新笔记
 
-1. **选分区。** 不知道放哪就放 [`03-应用`](https://github.com/collinszheng/ai-knowledge-base/tree/main/docs/03-应用)；实在跨领域，再考虑新开分区（见第五节）。
+1. **选分区。** 不知道放哪就放 [`03-AI应用开发`](https://github.com/collinszheng/ai-knowledge-base/tree/main/docs/03-AI应用开发)；实在跨领域，再考虑新开分区（见第五节）。
 2. **复制模板。** 从 `_templates/` 拿 [`学习笔记模板.md`](https://github.com/collinszheng/ai-knowledge-base/blob/main/_templates/学习笔记模板.md) 或 [`论文笔记模板.md`](https://github.com/collinszheng/ai-knowledge-base/blob/main/_templates/论文笔记模板.md)。模板里已经有「一句话结论」和变更记录表，别从白纸开始。
 3. **按规范命名。** 文件名**不带日期前缀**：
 
@@ -35,7 +35,7 @@
    | 论文 | `年份-会议-简称.md` | `2017-NeurIPS-AttentionIsAllYouNeed.md` |
    | 踩坑 | `工具名-问题简述.md` | `PyTorch-CUDA版本不匹配.md` |
 
-   分区内文件名不必再重复分区名（`02-大模型/` 下不要写 `大模型-xxx.md`）。
+   分区内文件名不必再重复分区名（`04-大模型原理/` 下不要写 `大模型-xxx.md`）。
 
 4. **开头写元信息头**，站点和 GitHub 都会显示：
 
@@ -90,7 +90,7 @@ ai-knowledge-base/
 ├── package.json / package-lock.json
 └── docs/                      ← ★ 站点根目录 = 笔记正文
     ├── index.md               ← 站点首页（分区导航 + 学习路线）
-    ├── 01-基础/ … 06-AI辅助工程/  ← 各分区，README.md 是分区概览
+    ├── 01-AI辅助工程/ … 06-论文笔记/  ← 各分区，README.md 是分区概览
     ├── assets/                ← 图片；不会被当成分区
     ├── public/favicon.svg     ← 站点图标
     └── .vitepress/
@@ -145,7 +145,7 @@ ai-knowledge-base/
 **Q：图片放 `docs/assets/` 会不会被当成一个分区？**
 不会，`assets` 和 `public` 在 `sections.ts` 里被排除。
 
-**Q：`04-论文笔记/README.md` 里的模板链接为什么是 GitHub 绝对地址？**
+**Q：`06-论文笔记/README.md` 里的模板链接为什么是 GitHub 绝对地址？**
 因为 `_templates/` 在站点根目录之外，相对链接在站点里会是死链。凡是引用站点外的文件，就用 GitHub 的绝对 URL。
 
 **Q：改了笔记但站点没变化？**
