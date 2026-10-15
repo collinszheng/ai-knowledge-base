@@ -21,6 +21,7 @@
 2. **不改用户的全局 git 配置。** 本机全局的 `http.https://github.com.proxy` 与 `http.sslbackend=openssl` 是用户环境的一部分；需要绕开时只在单条命令上用 `-c` 覆盖。
 3. **不提交构建产物。** `node_modules/`、`docs/.vitepress/dist/`、`docs/.vitepress/cache/` 已在 `.gitignore`，不要 `-f` 强推。
 4. **不手改构建产物。** `docs/.vitepress/dist/` 是生成的，要改就改 `docs/` 下的源文件。
+5. **本机绝对路径不进版本库。** 仓库是公开的：盘符路径、`/Users/...`、`/home/...` 这类只属于某一台机器的路径，正文和提交信息里都不写。要用就换成中性描述（如「工作区外」），需要具体路径的人自己探。
 
 ## 工作方式
 
