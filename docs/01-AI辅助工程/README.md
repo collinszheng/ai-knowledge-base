@@ -7,11 +7,12 @@
 ## 内容索引
 
 - [学习清单](./学习清单.md) —— 从工具操作、提示词、工程化到安全合规的 9 个模块，逐条可勾选
+- [规则文件模板（AGENTS.md）](./规则文件模板-AGENTS.md) —— 起手新项目的红线与索引骨架，复制即用；本仓库真实填写的那份在 [仓库根 AGENTS.md](https://github.com/collinszheng/ai-knowledge-base/blob/main/AGENTS.md)
 
 ## 计划补充
 
 - [ ] **提示词库**：按场景归档真正好用的提示词，附失败版本作对比
-- [ ] **规则文件模板**：`AGENTS.md` 与 `.cursor/rules/*.mdc` 的可复用骨架
+- [ ] **Cursor 规则骨架**：`.cursor/rules/*.mdc` 的可复用写法（`AGENTS.md` 那份已单独成篇，见上方索引）
 - [ ] **失败案例集**：AI 把事搞砸的实录 + 根因分析（比成功案例更有价值）
 - [ ] **Agent Skills**：把重复流程封装成可复用技能（`SKILL.md`）的实例
 - [ ] **验证回路清单**：类型检查 / lint / 测试如何配置成 AI 的确定性反馈
