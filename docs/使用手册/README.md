@@ -90,7 +90,7 @@ ai-knowledge-base/
 ├── package.json / package-lock.json
 └── docs/                      ← ★ 站点根目录 = 笔记正文
     ├── index.md               ← 站点首页（分区导航 + 学习路线）
-    ├── 01-AI辅助工程/ … 06-论文笔记/  ← 各分区，README.md 是分区概览
+    ├── 01-AI辅助工程/ … 07-可复用资产/  ← 各分区，README.md 是分区概览
     ├── assets/                ← 图片；不会被当成分区
     ├── public/favicon.svg     ← 站点图标
     └── .vitepress/
