@@ -1,6 +1,6 @@
 # AGENTS.md
 
-> **本仓库自己的规则文件**，不是模板。可复用的通用模板见 [`docs/01-AI辅助工程/规则文件模板-AGENTS.md`](docs/01-AI辅助工程/规则文件模板-AGENTS.md)。
+> **本仓库自己的规则文件**，不是模板。可复用的通用模板见 [`docs/07-可复用资产/规则-AGENTS模板.md`](docs/07-可复用资产/规则-AGENTS模板.md)。
 
 个人 AI 学习文档库：VitePress 站点 + 纯 Markdown 笔记，正文全在 `docs/`，push 到 `main` 自动发布到 GitHub Pages。目标只有一个 —— **用 AI 把软件项目做得更快更好**，所以主线是 [`docs/01-AI辅助工程/`](docs/01-AI辅助工程/)。
 
